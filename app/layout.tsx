@@ -4,7 +4,8 @@ import "./styles/globals.css";
 import { AppRouterCacheProvider} from "@mui/material-nextjs/v14-appRouter";
 import { ThemeProvider } from '@mui/material/styles';
 import theme from "./utils/theme";
-import Layout from "./components/adminMenu/Layout";
+// import Layout from "./components/adminMenu/Layout";
+import Sidebar from "./components/navbar/sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,9 +27,9 @@ export default function RootLayout({
           // reference: https://mui.com/material-ui/integrations/nextjs/#app-router
           >
             <ThemeProvider theme={theme}>
-              <Layout>
+              <Sidebar>
                 {children}
-              </Layout>
+              </Sidebar>
           </ThemeProvider>
         </AppRouterCacheProvider>
         </body>
