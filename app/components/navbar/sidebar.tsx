@@ -1,10 +1,20 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 type LayoutProps = {
     children: React.ReactNode;
 };
 
 const Sidebar: React.FC<LayoutProps> = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
     return (
         <>
             <nav className="tw-fixed tw-top-0 tw-z-50 tw-w-full tw-bg-white tw-border-b tw-border-gray-200 dark:tw-bg-gray-800 dark:tw-border-gray-700">
@@ -41,50 +51,85 @@ const Sidebar: React.FC<LayoutProps> = () => {
       </li>
     </ul>
   </div>
-                        <div className="tw-flex tw-items-center md:tw-order-2 tw-space-x-1 md:tw-space-x-0 rtl:space-x-reverse">
-  <button type="button" data-dropdown-toggle="language-dropdown-menu" className="tw-inline-flex tw-items-center tw-font-medium tw-justify-center tw-px-4 tw-py-2 tw-text-sm tw-text-gray-900 dark:tw-text-white tw-rounded-lg tw-cursor-pointer tw-hover:bg-gray-100 dark:tw-hover:bg-gray-700 dark:tw-hover:text-white">
-    English (US)
-  </button>
-  <div className="tw-z-50 tw-hidden tw-my-4 tw-text-base tw-list-none tw-bg-white tw-divide-y tw-divide-gray-100 tw-rounded-lg tw-shadow tw-dark:bg-gray-700" id="language-dropdown-menu">
-    <ul className="tw-py-2 tw-font-medium" role="none">
-      <li>
-        <a href="#" className="tw-block tw-px-4 tw-py-2 tw-text-sm tw-text-gray-700 tw-hover:bg-gray-100 dark:tw-text-gray-400 dark:tw-hover:bg-gray-600 dark:tw-hover:text-white" role="menuitem">
-          <div className="tw-inline-flex tw-items-center">
-            English (US)
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#" className="tw-block tw-px-4 tw-py-2 tw-text-sm tw-text-gray-700 tw-hover:bg-gray-100 dark:tw-text-gray-400 dark:tw-hover:bg-gray-600 dark:tw-hover:text-white" role="menuitem">
-          <div className="tw-inline-flex tw-items-center">
-             Deutsch
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#" className="tw-block tw-px-4 tw-py-2 tw-text-sm tw-text-gray-700 tw-hover:bg-gray-100 dark:tw-text-gray-400 dark:tw-hover:bg-gray-600 dark:tw-hover:text-white" role="menuitem">
-          <div className="tw-inline-flex tw-items-center">
-            Italiano
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#" className="tw-block tw-px-4 tw-py-2 tw-text-sm tw-text-gray-700 tw-hover:bg-gray-100 dark:tw-text-gray-400 dark:tw-hover:bg-gray-600 dark:tw-hover:text-white" role="menuitem">
-          <div className="tw-inline-flex tw-items-center">
-            
-              pp
-          </div>
-        </a>
-      </li>
-    </ul>
+  <div>
+    
   </div>
-  <button data-collapse-toggle="navbar-language" type="button" className="tw-inline-flex tw-items-center tw-p-2 tw-w-10 tw-h-10 tw-justify-center tw-text-sm tw-text-gray-500 tw-rounded-lg tw-md:hidden tw-hover:bg-gray-100 tw-focus:outline-none tw-focus:ring-2 tw-focus:ring-gray-200 dark:tw-text-gray-400 dark:tw-hover:bg-gray-700 dark:tw-focus:ring-gray-600" aria-controls="navbar-language" aria-expanded="false">
-    <span className="tw-sr-only">Open main menu</span>
-    <svg className="tw-w-5 tw-h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-    </svg>
-  </button>
-</div>
+  <div className="tw-flex tw-items-center md:tw-order-2 tw-space-x-3 md:tw-space-x-0 rtl:tw-space-x-reverse">
+      
+  <FormControl  sx={{ minWidth: 80, marginX: 1 }}>
+        <InputLabel id="demo-simple-select-label">Lan</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          size="small"
+          label="Lan"
+        >
+          <MenuItem value={10}>Eng</MenuItem>
+          <MenuItem value={20}>French</MenuItem>
+          <MenuItem value={30}>Protuges</MenuItem>
+        </Select>
+      </FormControl>
+      <button
+        type="button"
+        className="tw-flex tw-text-sm tw-bg-gray-800 tw-rounded-full md:tw-me-0 focus:tw-ring-4 focus:tw-ring-gray-300 dark:focus:tw-ring-gray-600"
+        id="user-menu-button"
+        aria-expanded={isOpen}
+        onClick={toggleDropdown}
+        data-dropdown-toggle="user-dropdown"
+        data-dropdown-placement="bottom"
+      >
+        <span className="tw-sr-only">Open user menu</span>
+        <img
+          className="tw-w-8 tw-h-8 tw-rounded-full"
+          src="/docs/images/people/profile-picture-3.jpg"
+          alt="user photo"
+        />
+      </button>
+      {/* Dropdown menu */}
+      <div
+        className={`tw-z-50 ${isOpen ? '' : 'tw-hidden'} tw-absolute tw-text-base tw-list-none tw-bg-white tw-divide-y tw-divide-gray-100 tw-rounded-lg tw-shadow dark:tw-bg-gray-700 dark:tw-divide-gray-600`}
+        id="user-dropdown"
+      >
+        <div className="tw-px-4 tw-py-3">
+          <span className="tw-block tw-text-sm tw-text-gray-900 dark:tw-text-white">Bonnie Green</span>
+          <span className="tw-block tw-text-sm tw-text-gray-500 tw-truncate dark:tw-text-gray-400">name@flowbite.com</span>
+        </div>
+        <ul className="py-2" aria-labelledby="user-menu-button">
+          <li>
+            <a
+              href="#"
+              className="tw-block tw-px-4 tw-py-2 tw-text-sm tw-text-gray-700 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:tw-text-gray-200 dark:hover:tw-text-white"
+            >
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              className="tw-block tw-px-4 tw-py-2 tw-text-sm tw-text-gray-700 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:tw-text-gray-200 dark:hover:tw-text-white"
+            >
+              Settings
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              className="tw-block tw-px-4 tw-py-2 tw-text-sm tw-text-gray-700 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:tw-text-gray-200 dark:hover:tw-text-white"
+            >
+              Earnings
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              className="tw-block tw-px-4 tw-py-2 tw-text-sm tw-text-gray-700 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:tw-text-gray-200 dark:hover:tw-text-white"
+            >
+              Sign out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
 
                         {/* <div className="tw-flex tw-items-center">
