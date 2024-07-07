@@ -1,31 +1,32 @@
-'use client';
+"use client"
 import React from 'react';
-import Navbar from './Navbar';
-import Sidebar from './Sidebar';
 import { useRouter } from 'next/navigation';
-import { Container } from '@mui/material';
+import NavBar from '../navbar/Navbar';
+import LogIn from '@/app/page';
 
 type LayoutProps = {
-  children: React.ReactNode;
+    children: React.ReactNode;
 };
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const router = useRouter();
+    const router = useRouter();
+    const noNavBarRoutes = '/'; // Add more routes if needed
+    console.log("noNavBarRoutes", noNavBarRoutes)
 
-  // Check if the current path is the login page
-  const isLoginPage = router.pathname === '/views';
+    const isNoNavBarRoute = noNavBarRoutes.includes(router.pathname);
 
-  return (
-    <div style={{ display: 'flex' }}>
-      {!isLoginPage && <Sidebar />}
-      <div style={{ flexGrow: 1 }}>
-        {!isLoginPage && <Navbar />}
-        <Container>
-          {children}
-        </Container>
-      </div>
-    </div>
-  );
+    return (
+        <div>
+            {router.pathname === '/' ? ( 
+              <LogIn />
+            ) : (              
+            <NavBar >
+            {children}
+            </NavBar>
+            )
+              }
+        </div>
+    );
 };
 
 export default Layout;
