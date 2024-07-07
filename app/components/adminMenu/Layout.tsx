@@ -13,18 +13,23 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     const noNavBarRoutes = '/'; // Add more routes if needed
     console.log("noNavBarRoutes", noNavBarRoutes)
 
-    const isNoNavBarRoute = noNavBarRoutes.includes(router.pathname);
+    const isNotLoggedIn = router.pathname == '/' || router.pathname == '';
 
     return (
         <div>
-            {router.pathname === '/' ? ( 
-              <LogIn />
-            ) : (              
+
+{isNotLoggedIn && (
+  <div>
+                {children}  
+    </div>
+          )}
+
+            {!isNotLoggedIn && ( 
+             
             <NavBar >
             {children}
             </NavBar>
-            )
-              }
+            ) }   
         </div>
     );
 };

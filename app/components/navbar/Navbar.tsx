@@ -31,7 +31,7 @@ const NavBar: React.FC<LayoutProps> = ({
                                     <path clipRule="evenodd" fillRule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
                                 </svg>
                             </button>
-                            <a href="https://flowbite.com" className="tw-flex tw-ms-2 md:tw-me-24">
+                            <a href="http://www.travtech.com/" className="tw-flex tw-ms-2 md:tw-me-24">
                                 <img src="https://flowbite.com/docs/images/logo.svg" className="tw-h-8 tw-me-3" alt="tcm Logo" />
                                 <span className="tw-self-center tw-text-xl tw-font-semibold sm:tw-text-2xl tw-whitespace-nowrap dark:tw-text-white">Content Management</span>
                             </a>
