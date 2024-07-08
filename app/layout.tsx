@@ -6,7 +6,6 @@ import { AppRouterCacheProvider} from "@mui/material-nextjs/v14-appRouter";
 import { ThemeProvider } from "@mui/material";
 import theme from "./utils/theme";
 import Layout from "./components/adminMenu/Layout";
-import NavBar from "./components/navbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
