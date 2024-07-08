@@ -13,6 +13,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Card } from '@mui/material';
 
 function Copyright(props: any) {
   return (
@@ -44,6 +45,7 @@ export default function LogIn() {
     <ThemeProvider theme={defaultTheme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
+        <Card elevation={2} sx={{padding: 4}}>
         <Box        
           sx={{
             marginTop: 8,
@@ -105,6 +107,7 @@ export default function LogIn() {
             </Grid>
           </Box>
         </Box>
+        </Card>
         <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
     </ThemeProvider>
