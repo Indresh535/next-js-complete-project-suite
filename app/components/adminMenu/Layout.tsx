@@ -1,19 +1,16 @@
 "use client"
 import React from 'react';
-import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation'
 import NavBar from '../navbar/Navbar';
-import LogIn from '@/app/page';
 
 type LayoutProps = {
     children: React.ReactNode;
 };
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-    const router = useRouter();
-    const noNavBarRoutes = '/'; // Add more routes if needed
-    console.log("noNavBarRoutes", noNavBarRoutes)
+    const pathname = usePathname()    
 
-    const isNotLoggedIn = router.pathname == '/' || router.pathname == '';
+    const isNotLoggedIn = pathname == '/' || pathname == '';
 
     return (
         <div>
