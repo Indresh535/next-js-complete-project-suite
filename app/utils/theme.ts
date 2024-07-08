@@ -1,6 +1,6 @@
 'use client';
 import { Roboto } from 'next/font/google';
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from '@mui/material';
 // If you want to use CSS theme variables, use the extendTheme and CssVarsProvider utilities instead:
 // import { extendTheme } from '@mui/material/styles';
 
