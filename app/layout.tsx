@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Next-js Project setup",
-  description: "Complete setup for nexts-js project",
+  description: "Complete setup for nexts-js Project",
 };
 
 export default function RootLayout({
