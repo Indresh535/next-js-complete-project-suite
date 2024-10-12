@@ -96,14 +96,21 @@ const Views = () => {
         </Grid>
         <Grid item xs={6}>
         <Card elevation={4}>
-            <CardHeader title="Maps" />
+            <CardHeader title="Cruise Search" />
             <CardContent>
-
               <iframe src="https://cs.cruisebase.com/cs/?skin=1" frameBorder="0" width="100%" height="auto"
                       allowFullScreen></iframe>
-
             </CardContent>
         </Card>
+        </Grid>
+        <Grid item xs={12} height="100%">
+          <Card elevation={4}>
+            <CardHeader title="Price Drop" />
+            <CardContent>
+              <iframe src="https://css.cruisebase.com/pricedrop" frameBorder="0" width="100%" height="auto"
+                      allowFullScreen></iframe>
+            </CardContent>
+          </Card>
         </Grid>
         <Grid item xs={12}>
           <Card elevation={4}>
