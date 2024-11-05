@@ -46,7 +46,7 @@ const NavBar: React.FC<LayoutProps> = ({
         onClick={toggleDropdown} data-dropdown-toggle="dropdownNavbar" className="tw-flex tw-items-center tw-justify-between tw-w-full tw-py-2 tw-px-3 tw-text-gray-900 tw-rounded hover:tw-bg-gray-100 md:hover:tw-bg-transparent md:tw-border-0 
       md:hover:tw-text-blue-700 md:tw-p-0 md:tw-w-auto dark:tw-text-white md:dark:hover:tw-text-blue-500 dark:focus:tw-text-white dark:tw-border-gray-700 dark:hover:tw-bg-gray-700 md:dark:hover:tw-bg-transparent">Ships 
         <svg className="tw-w-2.5 tw-h-2.5 tw-ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
   </svg></button>
             <div id="dropdownNavbar" className="tw-z-10 tw-hidden tw-font-normal tw-bg-white tw-divide-y tw-divide-gray-100 tw-rounded-lg tw-shadow tw-w-44 dark:tw-bg-gray-700 dark:tw-divide-gray-600">
                 <ul className="tw-py-2 tw-text-sm tw-text-gray-700 dark:tw-text-gray-400"
