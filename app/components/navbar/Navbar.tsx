@@ -49,27 +49,40 @@ const NavBar: React.FC<LayoutProps> = ({
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
   </svg></button>
             <div id="dropdownNavbar" className="tw-z-10 tw-hidden tw-font-normal tw-bg-white tw-divide-y tw-divide-gray-100 tw-rounded-lg tw-shadow tw-w-44 dark:tw-bg-gray-700 dark:tw-divide-gray-600">
-                <ul className="tw-py-2 tw-text-sm tw-text-gray-700 dark:tw-text-gray-400" aria-labelledby="dropdownLargeButton">
-                  <li>
-                    <a href="#" className="tw-block tw-px-4 tw-py-2 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:hover:tw-text-white">Dashboard</a>
-                  </li>
-                  <li>
-                    <a href="#" className="tw-block tw-px-4 tw-py-2 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:hover:tw-text-white">Settings</a>
-                  </li>
-                  <li>
-                    <a href="#" className="tw-block tw-px-4 tw-py-2 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:hover:tw-text-white">Earnings</a>
-                  </li>
+                <ul className="tw-py-2 tw-text-sm tw-text-gray-700 dark:tw-text-gray-400"
+                    aria-labelledby="dropdownLargeButton">
+                    <li>
+                        <a href="#"
+                           className="tw-block tw-px-4 tw-py-2 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:hover:tw-text-white">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="/views/PriceDrop"
+                           className="tw-block tw-px-4 tw-py-2 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:hover:tw-text-white">PriceDrop</a>
+                    </li>
+                    <li>
+                        <a href="/views/CruiseSearch"
+                           className="tw-block tw-px-4 tw-py-2 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:hover:tw-text-white">Cruise Search</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                           className="tw-block tw-px-4 tw-py-2 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:hover:tw-text-white">Settings</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                           className="tw-block tw-px-4 tw-py-2 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:hover:tw-text-white">Earnings</a>
+                    </li>
                 </ul>
                 <div className="tw-py-1">
-                  <a href="#" className="tw-block tw-px-4 tw-py-2 tw-text-sm tw-text-gray-700 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:tw-text-gray-200 dark:hover:tw-text-white">Sign out</a>
+                    <a href="#"
+                       className="tw-block tw-px-4 tw-py-2 tw-text-sm tw-text-gray-700 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:tw-text-gray-200 dark:hover:tw-text-white">Sign out</a>
                 </div>
             </div>
       </li>
       <li>
-        <a href="#" className="tw-block tw-py-2 tw-px-3 md:tw-p-0 tw-text-gray-900 tw-rounded hover:tw-bg-gray-100 md:hover:tw-bg-transparent md:hover:tw-text-blue-700 dark:tw-text-white md:dark:hover:tw-text-blue-500 dark:hover:tw-bg-gray-700 dark:hover:tw-text-white md:dark:hover:tw-bg-transparent dark:tw-border-gray-700">Itineary</a>
+        <a href="/views/PriceDrop" className="tw-block tw-py-2 tw-px-3 md:tw-p-0 tw-text-gray-900 tw-rounded hover:tw-bg-gray-100 md:hover:tw-bg-transparent md:hover:tw-text-blue-700 dark:tw-text-white md:dark:hover:tw-text-blue-500 dark:hover:tw-bg-gray-700 dark:hover:tw-text-white md:dark:hover:tw-bg-transparent dark:tw-border-gray-700">Price Drop</a>
       </li>
       <li>
-        <a href="#" className="tw-block tw-py-2 tw-px-3 md:tw-p-0 tw-text-gray-900 tw-rounded hover:tw-bg-gray-100 md:hover:tw-bg-transparent md:hover:tw-text-blue-700 dark:tw-text-white md:dark:hover:tw-text-blue-500 dark:hover:tw-bg-gray-700 dark:hover:tw-text-white md:dark:hover:tw-bg-transparent dark:tw-border-gray-700">Sailings</a>
+        <a href="/views/CruiseSearch" className="tw-block tw-py-2 tw-px-3 md:tw-p-0 tw-text-gray-900 tw-rounded hover:tw-bg-gray-100 md:hover:tw-bg-transparent md:hover:tw-text-blue-700 dark:tw-text-white md:dark:hover:tw-text-blue-500 dark:hover:tw-bg-gray-700 dark:hover:tw-text-white md:dark:hover:tw-bg-transparent dark:tw-border-gray-700">Cruise Search</a>
       </li>
       <li>
         <a href="#" className="tw-block tw-py-2 tw-px-3 md:tw-p-0 tw-text-gray-900 tw-rounded hover:tw-bg-gray-100 md:hover:tw-bg-transparent md:hover:tw-text-blue-700 dark:tw-text-white md:dark:hover:tw-text-blue-500 dark:hover:tw-bg-gray-700 dark:hover:tw-text-white md:dark:hover:tw-bg-transparent dark:tw-border-gray-700">Maps</a>
@@ -175,21 +188,21 @@ const NavBar: React.FC<LayoutProps> = ({
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="tw-flex tw-items-center tw-p-2 tw-text-gray-900 tw-rounded-lg dark:tw-text-white hover:tw-bg-gray-100 dark:tw-hover:bg-gray-700 tw-group">
+                            <a href="/views/PriceDrop" className="tw-flex tw-items-center tw-p-2 tw-text-gray-900 tw-rounded-lg dark:tw-text-white hover:tw-bg-gray-100 dark:tw-hover:bg-gray-700 tw-group">
                                 <svg className="tw-flex-shrink-0 tw-w-5 tw-h-5 tw-text-gray-500 tw-transition tw-duration-75 dark:tw-text-gray-400 tw-group-hover:text-gray-900 dark:tw-group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
                                     <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm0 10h-4.286A1.857 1.857 0 0 0 10 11.857v4.286C10 17.169 10.831 18 11.857 18h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Zm-10 0H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Z"/>
                                 </svg>
-                                <span className="tw-flex-1 tw-ml-3">Ships</span>
+                                <span className="tw-flex-1 tw-ml-3">Price Drop</span>
                                 <span className="tw-inline-flex tw-items-center tw-justify-center tw-px-2 tw-ml-3 tw-text-sm tw-font-medium tw-text-blue-800 tw-bg-blue-100 tw-rounded-full dark:tw-bg-blue-900 dark:tw-text-blue-300">Pro</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="tw-flex tw-items-center tw-p-2 tw-text-gray-900 tw-rounded-lg dark:tw-text-white hover:tw-bg-gray-100 dark:tw-hover:bg-gray-700 tw-group">
+                            <a href="/views/CruiseSearch" className="tw-flex tw-items-center tw-p-2 tw-text-gray-900 tw-rounded-lg dark:tw-text-white hover:tw-bg-gray-100 dark:tw-hover:bg-gray-700 tw-group">
                                 <svg className="tw-flex-shrink-0 tw-w-5 tw-h-5 tw-text-gray-500 tw-transition tw-duration-75 dark:tw-text-gray-400 tw-group-hover:text-gray-900 dark:tw-group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
                                     <path d="M1 18h16a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-5.5V9h.5a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1.5a1.5 1.5 0 0 0-3 0H7a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h.5v3H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1Z"/>
                                     <path d="M13.031 0a1 1 0 0 0-.926.628l-1 2.5a1 1 0 1 0 1.852.741l1-2.5A1 1 0 0 0 13.031 0ZM7 1a1 1 0 0 0 0 2h3a1 1 0 0 0 0-2H7ZM3.043.628a1 1 0 0 0-.926 1.372l1 2.5a1 1 0 0 0 1.852-.74l-1-2.5A1 1 0 0 0 3.043.628Z"/>
                                 </svg>
-                                <span className="tw-flex-1 tw-ml-3">Itinearry</span>
+                                <span className="tw-flex-1 tw-ml-3">Cruise Search</span>
                                 <span className="tw-inline-flex tw-items-center tw-justify-center tw-w-3 tw-h-3 tw-ml-2 tw-text-sm tw-font-medium tw-text-blue-800 tw-bg-blue-100 tw-rounded-full dark:tw-bg-blue-900 dark:tw-text-blue-300">3</span>
                             </a>
                         </li>
