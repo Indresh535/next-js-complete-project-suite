@@ -1,11 +1,16 @@
 "use client"
 import Script from "next/script";
 import React from 'react'
+import Head from 'next/head';
 import { Container, Grid, Card, CardHeader, CardContent } from '@mui/material'
 
 const PriceDropWidget = () => {
     return (
         <Container maxWidth='lg'>
+             <Head>
+        {/* Set the base URL for relative paths */}
+        <base href="https://css.cruisebase.com/pricedrop/" />
+      </Head>
             <Grid container spacing={2} sx={{marginTop: 10}}
                    direction="row"
                    justifyContent="center"
