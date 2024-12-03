@@ -35,3 +35,18 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 https://medium.com/@mertenercan/nextjs-13-folder-structure-c3453d780366
+
+
+
+Summary Table
+Tool	Type	Version Control	CI/CD	Best for
+Azure DevOps	Cloud & On-premise	Git, TFVC	Azure Pipelines	Teams needing an integrated cloud DevOps suite
+GitLab	Cloud & On-premise	Git	GitLab CI/CD	Self-hosted DevOps platform for teams
+Jira + Bitbucket	Cloud & On-premise	Git	Bamboo	Agile teams needing project management
+GitHub	Cloud	Git	GitHub Actions	Git-based version control with CI/CD
+CircleCI	Cloud	GitHub, GitLab	CircleCI Pipelines	Fast, scalable CI/CD for Git-based repositories
+Jenkins	Self-hosted	Git, SVN, etc.	Jenkins Pipelines	Customizable CI/CD automation server
+Travis CI	Cloud	GitHub, Bitbucket	Travis CI Pipelines	GitHub-based CI/CD automation
+TeamCity	Self-hosted	Git, SVN, Mercurial	TeamCity Pipelines	Advanced build and test automation
+Perforce Helix Core	Self-hosted	Helix Core	Jenkins, TeamCity	Large-scale projects (game dev, media)
+Buildkite	Hybrid (Cloud & On-premise)	Git	Buildkite Pipelines	Scalable hybrid CI/CD with custom agents
