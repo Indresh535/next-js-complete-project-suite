@@ -37,7 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 https://medium.com/@mertenercan/nextjs-13-folder-structure-c3453d780366
 
 
-
+https://cs.cruisebase.com/csa/GetSCriteria?skin=1&did=1&mon=3%2F1%2F2025
 Summary Table
 Tool	Type	Version Control	CI/CD	Best for
 Azure DevOps	Cloud & On-premise	Git, TFVC	Azure Pipelines	Teams needing an integrated cloud DevOps suite
