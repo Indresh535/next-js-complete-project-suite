@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
 import Dropdown from 'react-dropdown';
@@ -16,7 +17,7 @@ hello
        </div>
 
         <div className={styles.ctas}>
-        <Dropdown options={options} value={defaultOption} placeholder="Select an option" />;
+        <Dropdown options={options} value={defaultOption} placeholder="Select an option" />
         </div>
       </main>
       <footer className={styles.footer}>
