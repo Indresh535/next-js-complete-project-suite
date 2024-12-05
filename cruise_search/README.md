@@ -50,3 +50,15 @@ Travis CI	Cloud	GitHub, Bitbucket	Travis CI Pipelines	GitHub-based CI/CD automat
 TeamCity	Self-hosted	Git, SVN, Mercurial	TeamCity Pipelines	Advanced build and test automation
 Perforce Helix Core	Self-hosted	Helix Core	Jenkins, TeamCity	Large-scale projects (game dev, media)
 Buildkite	Hybrid (Cloud & On-premise)	Git	Buildkite Pipelines	Scalable hybrid CI/CD with custom agents
+
+
+Comparison Summary
+Feature	GitHub Actions	Jenkins	Jira
+Primary Use	CI/CD workflows within GitHub	CI/CD, automation, building, deploying	Project and issue tracking, task management
+Cross-Platform Support	Yes (Linux, Windows, macOS)	Yes (Linux, Windows, macOS)	No, but integrates with CI/CD tools (GitHub, Jenkins)
+Integration with CI/CD	Native integration with GitHub, limited external support	Extensive integrations with CI/CD tools	Integrates with CI/CD tools like Jenkins, GitHub Actions
+Configuration	Simple YAML configuration	Highly customizable with a Groovy-based script	Customizable workflows and issue tracking
+Ease of Setup	Very easy, if using GitHub	More complex setup, requires maintenance	Requires integration with CI/CD tools
+Free Tier	Yes, generous for public repositories	Free (open-source), but requires self-hosting	Free for small teams (up to 10 users)
+Pros	Easy integration with GitHub, simple to use	Highly flexible and extensible, large community	Excellent for tracking tasks, detailed reporting
+Cons	Limited to GitHub repositories, basic in some areas	Complex setup, requires maintenance	Not a CI/CD tool, requires other tools for automation
